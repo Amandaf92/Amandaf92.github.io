@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+
+        <title>Starks & Co. Photography</title>
+
+        <link rel="stylesheet" type="text/css" href="Homepagestyle.css">
+
+        <link rel="stylesheet" type="text/css" href="Gallery.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+
+        <header>
+
+            <a href="#" class="logo">Starks & Co. Photography</a>
+
+            <ul class="navlist">
+                <li><a href="Index.html">About Me</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+
+        </header>
+
+        <article>
+            <hr class="horizontalrule">
+
+            <nav>| <a href="#Fantasy">Forest Magic</a> | <a href="#Portraits">Portraits</a> | <a href="#Pride">Pride</a> | <a href="#LightPainting">Light Painting</a> |</nav>
+
+        </article>
+
+        <section class="row"> 
+            <div class="column">
+            <h1 id="Fantasy">Forest Magic</h1>
+            <img src="assets/ForestMagic/forestmagic.jpg">
+            <img src="assets/ForestMagic/forestmagic2.jpg">
+            </div>
+            <div class="column">
+            <img src="assets/ForestMagic/forestmagic3.jpg">
+            <img src="assets/forestMagic/forestmagic4.jpg">
+            </div>
+        </section>
+
+        <hr class="horizontalrule">
+       
+        <section class="row"> 
+            <div class="column">
+            <h1 id="Portraits">Portraits</h1>
+            <img src="assets/Portraits/portrait3.jpg">
+            <img src="assets/Portraits/portrait5.jpg">
+            </div>
+            <div class="column">
+            <img src="assets/Portraits/portrait2.jpg">
+            <img src="assets/Portraits/portrait4.jpg">
+            </div>
+        </section>
+
+        <hr class="horizontalrule">
+
+        <section class="row"> 
+            <div class="column">
+            <h1 id="Pride">Pride</h1>
+            <img src="assets/Pride/pride.jpg">
+            <img src="assets/Pride/pride2.jpg">
+            </div>
+            <div class="column">
+            <img src="assets/Pride/pride3.jpg">
+            <img src="assets/Pride/pride4.jpg">
+            </div>
+        </section>
+
+        <hr class="horizontalrule">
+
+        <section class="row"> 
+            <div class="column">
+            <h1 id="LightPainting">Light Painting</h1>
+            <img src="assets/LightPainting/lightpainting.jpg">
+            <img src="assets/LightPainting/lightpainting4.jpg">
+            </div>
+            <div class="column">
+            <img src="assets/LightPainting/lightpainting2.jpeg">
+            <img src="assets/LightPainting/lightpainting5.jpg">
+            </div>
+        </section>
+
+        <hr class="horizontalrule">
+        <br>
+        <br>
+
+        <script>
+
+            /* Button to return to top of screen */
+            let mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+
+
+            /* script to show dropdown nav menu */
+            let menu = document.querySelector('#menu-icon');
+            let navlist = document.querySelector('.navlist');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navlist.classList.toggle('open');
+            }
+            </script>
+
+    </body>
+</html>

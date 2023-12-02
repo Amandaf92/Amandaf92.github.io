@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+
+        <title>Starks & Co. Photography</title>
+
+        <link rel="stylesheet" type="text/css" href="Homepagestyle.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+            <a href="#" class="logo">Starks & Co. Photography</a>
+
+            <ul class="navlist">
+                <li><a href="Index.html">About Me</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-text">
+                <div>
+                    <span class="one">Hello I'm</span>
+                </div>
+                <h2 class="animate_left">Amanda Fockler</h2>
+                <p class="textcolumn animate_bottom">
+                    Hi there! I'm Amanda, a photographer and student at Oakland Community College. My passion lies in creatively capturing moments of love and self-expression. I aim to empower and celebrate every person I work with. As a member of the LGBTQ+ community I understand the importance of representation and visibility. I believe that everyone deserves to have their story told and I'd love to help tell yours. </p>
+            </div>
+        </section>
+
+        <script>
+            /* --script to show dropdown nav menu-- */
+            let menu = document.querySelector('#menu-icon');
+            let navlist = document.querySelector('.navlist');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navlist.classList.toggle('open');
+            }
+        </script>
+
+    </body>
+</html>

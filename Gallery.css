@@ -1,0 +1,57 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+h1{
+    text-align: left;
+}
+
+/* Gallery Bookmarks */
+nav{
+    display: block;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    font-size: 1em;
+}
+nav a{
+    color: rgba(255, 255, 255, 0.5);
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* --Image Hover CSS-- */
+.column {
+    float: left;
+    flex: 50%;
+    max-width: 50%;
+    padding: 8px;
+}
+.column img {
+    margin-top: 12px;
+    transition: all .25s;
+    opacity: .5;
+    vertical-align: middle;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column img:hover{
+    opacity: 1;
+    box-shadow: 10px 10px 3px rgba(255, 0, 255, 0.3), -10px -10px 3px rgba(172, 172, 172, 0.25);
+}
+@media screen and (max-width: 1000px){
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}

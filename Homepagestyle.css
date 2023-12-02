@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+    text-decoration: none;
+}
+body{
+    background-repeat: repeat;
+    color: #fff;
+    background-color: #111111;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+span{
+    color: rgba(255, 0, 255, 0.5);
+}
+section{
+    padding: 25px 15% 25px;
+}
+article{
+    padding: 100px 50px 0px;
+}
+hr{
+    border: 1px solid rgba(255, 0, 255, 0.5);
+}
+
+/* --Horizontal Rule CSS Class-- */
+.horizontalrule{
+    border: 1px solid rgba(255, 0, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/* --Header Navigation CSS Classes-- */
+.logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+    transition: all 1s ease;
+}
+.navlist a{
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+}
+.navlist a:hover{
+    color: rgb(255, 255, 255);
+}
+#menu-icon{
+    font-size: 35px;
+    color: #ccc;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+@media screen and (max-width: 1400px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #2a2a2a;
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: #ccc;
+    }
+    .navlist a:hover{
+        color: rgba(255, 0, 255, 0.5);
+    }
+    .navlist a:active{
+        color: #ccc;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+
+/* --Main Body CSS Classes-- */
+.home{
+    position: relative;
+    float: right;
+    height: 100vh;
+    width: 100%;
+    background-image: url(aboutmepicture.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition-duration: 2s;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.two{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.home-text h2{
+    font-size: 4em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.home-text p{
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.textcolumn{
+    width: 350px;
+}
+
+/*Adjusting the background so the text is legible*/
+@media screen and (max-width: 1350px){
+    .home {
+        background-image: url(aboutmepicture_Blur.jpg);
+    }
+}  
+
+/* --Social Media Icon CSS Class-- */
+.imageColumn{
+    height: 50px;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+/* --Text Animation-- */
+.animate_left{
+    position:relative;
+    animation:animateleft 1s
+}   
+@keyframes animateleft{
+    from{left:-300px;opacity:0} to{left:0;opacity:1}
+}
+.animate_bottom{
+    position:relative;animation:animatebottom 1s
+}      
+@keyframes animatebottom{
+    from{bottom:-200px;opacity:0} to{bottom:0;opacity:1}
+}
+
+/* --Button to return to top of pages-- */
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(172, 172, 172, 0.25);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#myBtn:hover{
+    background-color: rgba(255, 0, 255, 0.3);
+}
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up{
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
